@@ -1,6 +1,16 @@
+import 'package:fahrtenbuch/entities/ride.dart';
+import 'package:fahrtenbuch/pages/home_page.dart';
 import 'package:flutter/material.dart';
+import 'package:hive/hive.dart';
+import 'package:hive_flutter/adapters.dart';
 
-void main() {
+void main() async{
+
+  await Hive.initFlutter();
+  Hive.registerAdapter(RideAdapter());
+
+  var box = await Hive.openBox('myBox');
+
   runApp(const MainApp());
 }
 
@@ -9,12 +19,9 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: HomePage()
     );
   }
 }
