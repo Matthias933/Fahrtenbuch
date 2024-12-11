@@ -32,7 +32,7 @@ class Person {
           .map((roleJson) => Role.fromJson(roleJson as Map<String, dynamic>))
           .toList(),
         ),
-      _ => throw const FormatException('Failed to load album.'),
+      _ => throw const FormatException('Failed to load person.'),
     };
   }
 }
