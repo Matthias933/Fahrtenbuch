@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class CustomNumberInput extends StatefulWidget {
   final String labelText;
-  CustomNumberInput({super.key, required this.labelText});
+  const CustomNumberInput({super.key, required this.labelText});
 
   @override
   State<CustomNumberInput> createState() => _CustomNumberInputState();

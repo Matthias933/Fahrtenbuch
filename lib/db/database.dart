@@ -1,4 +1,3 @@
-import 'package:fahrtenbuch/entities/ride.dart';
 import 'package:hive/hive.dart';
 
 class Database {

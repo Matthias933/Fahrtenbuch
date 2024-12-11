@@ -1,7 +1,6 @@
 import 'package:fahrtenbuch/entities/ride.dart';
 import 'package:fahrtenbuch/pages/home_page.dart';
 import 'package:flutter/material.dart';
-import 'package:hive/hive.dart';
 import 'package:hive_flutter/adapters.dart';
 
 void main() async{

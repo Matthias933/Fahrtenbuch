@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class AutoCompleteInput extends StatefulWidget {
   final List<String> names;
-  AutoCompleteInput({super.key, required this.names});
+  const AutoCompleteInput({super.key, required this.names});
 
   @override
   State<AutoCompleteInput> createState() => _AutoCompleteInputState();

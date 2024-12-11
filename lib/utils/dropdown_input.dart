@@ -4,7 +4,7 @@ class CustomDropdownInput extends StatefulWidget {
   final String title;
   final List<String> items;
 
-  CustomDropdownInput({Key? key, required this.items, required this.title});
+  const CustomDropdownInput({super.key, required this.items, required this.title});
 
   @override
   _CustomDropdownInputState createState() => _CustomDropdownInputState();
