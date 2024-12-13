@@ -9,7 +9,7 @@ void main() async{
   Hive.registerAdapter(RideAdapter());
 
   var box = await Hive.openBox('myBox');
-
+  box.clear();
   runApp(const MainApp());
 }
 

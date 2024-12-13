@@ -25,7 +25,7 @@ class RideAdapter extends TypeAdapter<Ride> {
   @override
   void write(BinaryWriter writer, Ride obj) {
     writer
-      ..writeByte(2)
+      ..writeByte(4)
       ..writeByte(0)
       ..write(obj.driverId)
       ..writeByte(1)

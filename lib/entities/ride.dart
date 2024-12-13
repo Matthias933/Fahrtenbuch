@@ -10,9 +10,17 @@ class Ride {
   @HiveField(1) 
   final int commanderId;
 
-  const Ride({
+  @HiveField(2)
+  final DateTime? rideDate = DateTime.now();
+
+  @HiveField(3)
+  final String? rideDescription = "";
+
+  Ride({
     required this.driverId,
     required this.commanderId,
+    //required this.rideDate,
+    //required this.rideDescription
   });
 
   Map<String, dynamic> toJson() {
